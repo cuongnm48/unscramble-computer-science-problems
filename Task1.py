@@ -9,7 +9,6 @@ with open('texts.csv', 'r') as f:
     differentNumbersInTexts = set()
     for x in texts:
         differentNumbersInTexts.update([x[0], x[1]])
-    print(len(differentNumbersInTexts))
 
 with open('calls.csv', 'r') as f:
     reader = csv.reader(f)
@@ -17,7 +16,8 @@ with open('calls.csv', 'r') as f:
     differentNumbersInCalls = set()
     for x in calls:
         differentNumbersInCalls.update([x[0], x[1]])
-    print(len(differentNumbersInCalls))
+
+print(f"There are {len(differentNumbersInCalls.union(differentNumbersInTexts))} different telephone numbers in the records.")
 
 """
 TASK 1:
