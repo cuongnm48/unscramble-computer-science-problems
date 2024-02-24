@@ -1,0 +1,19 @@
+Analysis task:
+
+Task0:
+This code has a time complexity that depends on the number of records in each CSV file. Reading and converting a CSV file into a list is typically O(n), where n is the number of rows in the CSV file. Therefore, the time complexity is influenced by the size of the CSV files.
+
+Task1:
+This code has a time complexity of O(n), where n is the total number of rows in both 'texts.csv' and 'calls.csv'. 
+
+Task2:
+The time complexity of this code is O(n), where n is the number of records in the 'calls.csv' file, as it iterates through the call records once. The dictionary lookups and updates have an average time complexity of O(1).
+
+Task3:
+The loop iterating over 'calls.csv' records contributes O(n), where n is the number of records.
+The set operations have average time complexity O(1) for each insertion.
+The sorting operation has a time complexity of O(nlogn) where n is the number of incoming call list.
+
+Task4:
+The loops iterating over the records in 'texts.csv' and 'calls.csv' contribute to a time complexity of O(n), where n is the total number of records in both files.
+The sorting operation has a time complexity of O(nlogn), where n is the number of telemarketer.
